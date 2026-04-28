@@ -1,0 +1,67 @@
+/* Card Component Styles */
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-gray-200);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+/* Elevation Variants */
+.card--elevation-none {
+  box-shadow: none;
+}
+
+.card--elevation-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.card--elevation-md {
+  box-shadow: var(--shadow-md);
+}
+
+.card--elevation-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+.card:hover {
+  border-color: var(--color-gray-300);
+}
+
+/* Card Header */
+.card__header {
+  padding: var(--spacing-4) var(--spacing-4) var(--spacing-2) var(--spacing-4);
+  border-bottom: 1px solid var(--color-gray-100);
+  background-color: var(--color-gray-50);
+}
+
+.card__title {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gray-900);
+  line-height: var(--line-height-tight);
+}
+
+/* Card Body */
+.card__body {
+  padding: var(--spacing-4);
+}
+
+.card__body > *:first-child {
+  margin-top: 0;
+}
+
+.card__body > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Card Footer (for future enhancement) */
+.card__footer {
+  padding: var(--spacing-2) var(--spacing-4) var(--spacing-4) var(--spacing-4);
+  border-top: 1px solid var(--color-gray-100);
+  background-color: var(--color-gray-50);
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-2);
+}
